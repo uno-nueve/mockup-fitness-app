@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.header {
+    height: 64px;
+    width: 100%;
+    background: #D9D9D9;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+.header > img {
+    height: 100%;
+}
+
+.header_toggle-btn {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.navbar {
+    height: 100%;
+    width: 260px;
+    background: slategray;
+    padding: 12px;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: -260px;
+    transition: .20s;
+}
+
+.navbar_buttons {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar_toggle-btn {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.navbar_add-btn {
+    height: 40px;
+    width: 78%;
+    background-color: white;
+    border: 1px solid black;
+    padding-left: 12px;
+    text-align: left;
+}
+
+.navbar_add-btn > i {
+    margin-right: 12px;
+}
+
+.week {
+    height: 64px;
+    width: 100%;
+    background-color: white;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    margin-top: 24px;
+}
+
+.active {
+    left: 0;
+    transition: .35s;
+}
+
+.container {
+    height: calc(100% - 64px);
+    width: 100%;
+    position: absolute;
+    top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.week_wrapper {
+    height: 808px;
+    width: 840px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.day {
+    background-color: #D9D9D9;
+    border: 1px solid black;
+}
+
+.day_title {
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 100%;
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.exercise_wrapper {
+    padding: 12px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 12px;
+}
+
+.day_exercise {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.exercise_title {
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.exercise_info {
+    padding: 10px 12px;
+    height: 90px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.exercise_ranking {
+    align-self: flex-end;
+}
+
+#day-7 {
+    grid-column: 1/4;
+}
+
+#day-7 .exercise_wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#day-7 .exercise_wrapper .exercise_info {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn {
+    height: 20px;
+    width: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.success-btn:hover {
+    background-color: #b7e4c7;
+}
+
+.success-btn:active {
+    background-color: #80b918;
+}
+
+.difficult-btn:hover {
+    background-color: #fff6cc;
+}
+
+.difficult-btn:active {
+    background-color: #ffc300;
+}
+
+.failure-btn:hover {
+    background-color: #f08080;
+}
+
+.failure-btn:active {
+    background-color: #dc2f02;
+}
+
+.success {
+    background-color: #80b918;
+}
+
+.success:hover {
+    background-color: #80b918;
+}
+
+.difficult {
+    background-color: #ffc300;
+}
+
+.difficult:hover {
+    background-color: #ffc300;
+}
+
+.failure {
+    background-color: #dc2f02;
+}
+
+.failure:hover {
+    background-color: #dc2f02;
+}
